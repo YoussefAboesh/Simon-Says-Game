@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/TmrYmGq/pngwing-com.png" type="">
+    <title>Simon Says Game</title>
+</head>
+<body>
+
+    <div id="container">
+        
+        <p id="welcomeMessage" style="top: 20px;">Welcome to Simon Says Game</p>
+        <div id="registration" style="display: flex; flex-direction: column; align-items: center;">
+            <input type="text" id="playerName" placeholder="Enter your name" style="margin-bottom: 10px;">
+            <button class="button" onclick="startGame()">Start Game</button>
+        </div>        
+        
+
+        <div id="game">
+            <div id="scoreBox">
+                <p id="levelDisplay"></p>
+                <p id="scoreDisplay"></p>
+            </div>
+            
+            <div id="simonContainer">
+                <div class="color-button" id="red" onclick="checkColor('red')"></div>
+                <div class="color-button" id="blue" onclick="checkColor('blue')"></div>
+                <div class="color-button" id="green" onclick="checkColor('green')"></div>
+                <div class="color-button" id="yellow" onclick="checkColor('yellow')"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
