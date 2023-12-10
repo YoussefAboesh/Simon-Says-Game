@@ -114,9 +114,10 @@ function endGame() {
 function resetGame() {
     level = 1;
     score = 0;
-    document.getElementById("welcomeMessage").style.display = "block"; // إظهار رسالة الترحيب عند إعادة اللعب
+    document.getElementById("welcomeMessage").style.display = "block";
     document.getElementById("simonContainer").style.pointerEvents = "none";
-    document.getElementById("registration").style.display = "block";
+    document.getElementById("registration").style.display = "flex";
+    document.getElementById("registration").style.flexDirection = "column";
     document.getElementById("game").style.display = "none";
     document.getElementById("playerName").value = "";
 }
